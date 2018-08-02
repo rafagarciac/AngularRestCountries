@@ -7,7 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./countries-list.component.css']
 })
 export class CountriesListComponent implements OnInit {
-  private  countries:  Array<object> = [];
+  private countries:  Array<object> = [];
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
@@ -22,5 +22,14 @@ export class CountriesListComponent implements OnInit {
       }
     });
   }
+
+  getValidPath (name): string {
+    // Include your Fail Url Matches Character 
+    let matchFailsUrl = ['(', ')'];
+    for (let i = 0; i < matchFailsUrl.length; i++) {
+      name = name.replace(matchFailsUrl[i], '');      
+    }
+    return name
+  } 
 
 }
