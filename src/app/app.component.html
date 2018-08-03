@@ -1,9 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <mat-tab-group>
-    <mat-tab label="Countries List"> 
+    <mat-tab label="Countries List" [routerLink] = "'countries'"> 
         <h1>🌍🌍 COUNTRIES ON THE WORLD 🌍🌍</h1>
-        <a [routerLink] = "'countries'"> List of All Countries on the World </a>
+        <!--<a [routerLink] = "'countries'"> List of All Countries on the World </a><br><br>-->
+        <mat-divider></mat-divider><br>
         <router-outlet></router-outlet>  
     </mat-tab>
     <mat-tab label="Second"> Content 2 </mat-tab>

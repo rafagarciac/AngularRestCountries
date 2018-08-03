@@ -4,6 +4,12 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatGridListModule} from '@angular/material/grid-list';
+
+
+
 
 
 @NgModule({
@@ -13,13 +19,19 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatCheckboxModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule,
+    MatMenuModule,
+    MatGridListModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
     MatListModule,
-    MatTabsModule
+    MatTabsModule, 
+    MatCardModule,
+    MatMenuModule,
+    MatGridListModule
   ],
   declarations: []
 })
