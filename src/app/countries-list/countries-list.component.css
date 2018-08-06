@@ -26,3 +26,9 @@ button:hover {
     -o-transition: font-size 0.8s;        /*Opera*/
     transition: font-size 0.8s;           /*Chrome & Others*/
 }
+
+.img-header > img {
+    width: 80px;
+    height: 80px;
+    size: cover;
+}

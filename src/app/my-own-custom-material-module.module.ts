@@ -7,7 +7,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
@@ -22,7 +24,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatTabsModule,
     MatCardModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    MatInputModule,
+    MatIconModule,
+    MatExpansionModule
   ],
   exports: [
     MatButtonModule,
@@ -31,7 +36,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatTabsModule, 
     MatCardModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    MatInputModule,
+    MatIconModule,
+    MatExpansionModule
   ],
   declarations: []
 })

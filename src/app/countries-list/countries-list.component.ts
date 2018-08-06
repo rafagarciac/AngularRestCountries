@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material';
 
 @Component({
   selector: 'app-countries-list',
@@ -8,7 +10,11 @@ import { ApiService } from '../api.service';
 })
 export class CountriesListComponent implements OnInit {
   private countries:  Array<object> = [];
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { 
+    iconRegistry.addSvgIcon(
+      'thumbs-up',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
+   }
 
   ngOnInit() {
     this.getCountries();
